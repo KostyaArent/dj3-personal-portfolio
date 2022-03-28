@@ -1,0 +1,21 @@
+*.log
+*.sqlite3
+
+
+# Distribution / packaging
+
+.Python
+
+env/
+
+build/
+
+dist/
+
+downloads/
+
+lib/
+
+lib64/
+
+parts/
