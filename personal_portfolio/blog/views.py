@@ -3,8 +3,9 @@ from .models import Blog
 
 
 def all_blogs(request):
+    blogs_count = Blog.objects.count()
     blogs = Blog.objects.order_by('-publish_date')[:5]
-    return render(request, 'blog/all_blogs.html', {'blogs': blogs})
+    return render(request, 'blog/all_blogs.html', {'blogs': blogs, 'blogs_count':blogs_count})
 
 
 def detail(request, blog_id):
