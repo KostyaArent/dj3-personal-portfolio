@@ -1,10 +1,13 @@
 *.log
 *.sqlite3
+*.pyc
 
 
 # Distribution / packaging
 
 .Python
+
+migrations/
 
 env/
 
