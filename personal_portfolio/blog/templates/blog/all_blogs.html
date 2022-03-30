@@ -1,1 +1,7 @@
 <h1>Блог</h1>
+
+{% for blog in blogs %}
+    <a href="{% url 'blog:detail' blog.id %}">{{ blog.title }}</a>
+    <h4>{{ blog.publish_date }}</h4>
+    <p>{{ blog.description }}</p>
+{% endfor %}
