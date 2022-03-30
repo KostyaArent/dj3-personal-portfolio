@@ -1,4 +1,8 @@
+{% extends 'portfolio/base.html' %}
 {% load ru_pluralize %}
+{% load static %}
+
+{% block content %}
 <h1>Блоги</h1>
 
 <h2>Кос написал {{ blogs_count }} блог{{ blogs.count|ru_pluralize:",а,ов" }}</h2>
@@ -8,3 +12,4 @@
     <h4>{{ blog.publish_date|date:'d M Y'|lower }}</h4>
     <p>{{ blog.description|safe|truncatechars:100 }}</p>
 {% endfor %}
+{% endblock%}
