@@ -2,7 +2,9 @@
 {% load static %}
 
 {% block content %}
-
+<p style="text-align: center; font-family: 'Montserrat', sans-serif; font-size: 100%; font-size: 200%;">СОВСЕМ ЧУТЬ-ЧУТЬ ОБО МНЕ</p>
+<hr />
+<br>
 <div class="position-relative" style="display: block;
   margin-left: auto;
   margin-right: auto;
@@ -11,9 +13,9 @@
 <div class="card mb-0" style="max-width: 540px;">
   <img src="{% static 'portfolio/HC-5joB9JTs.jpg' %}" class="card-img-top" alt="...">
   <div class="card-body" style="text-align: center;">
-  <h5 class="card-title">КАТрепалин</h5>
-  <!--<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-  <a href="{% static 'portfolio/KATrepalin.pdf' %}" class="btn btn-primary">Резюме</a>
+  <h5 class="card-title">Имя: Константин</h5>
+  <p class="card-text">Любит играть жесткие гитарные риффы!</p>
+  <a href="{% static 'portfolio/KATrepalin.pdf' %}" target="_blank" class="btn btn-secondary">Открыть cv</a>
   </div>
 </div>
 
@@ -22,6 +24,12 @@
 <br>
 <br>
 <br>
+<div class="position-relative" style="display: block;
+  margin-left: auto;
+  margin-right: auto;">
+<p style="text-align: center; font-family: 'Montserrat', sans-serif; font-size: 100%; font-size: 200%;">ПОРТФОЛИО</p>
+<hr />
+</div>
 <br>
 <div class="grid">
   <div class="row">
@@ -29,10 +37,11 @@
     <div class="col" style="text-align: center;">
       <figure class="figure">
         <h2>{{ project.title }}</h2>
-        <a href="{% if project.url %} {{ project.url }} {% endif %}">
+        <a href="{% if project.url %} {{ project.url }} {% endif %}"target="_blank">
+
           <img src="{{ project.image.url }}" class="figure-img img-fluid rounded" style="object-fit:contain;
-            width:480px;
-            height:640px;
+            width:320px;
+            height:320px;
             border: solid 1px #CCC" alt="...">
         </a>
         <div class="container" style="text-align: center;">
