@@ -1,24 +1,7 @@
+### Django ###
 *.log
-*.sqlite3
+*.pot
 *.pyc
-
-
-# Distribution / packaging
-
-.Python
-
-migrations/
-
-env/
-
-build/
-
-dist/
-
-downloads/
-
-lib/
-
-lib64/
-
-parts/
+__pycache__/
+local_settings.py
+/static/
