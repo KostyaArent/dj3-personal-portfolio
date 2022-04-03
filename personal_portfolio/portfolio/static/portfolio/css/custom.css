@@ -1,3 +1,55 @@
 .nav {
-	font-family: 'Bitter', serif;
+	border-style: double;
+	background-color: #201b1b;
+}
+
+.nav-item > a {
+	color:#c5c6c7;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.nav-item > a:hover {
+	color: white;
+}
+
+.ktlogo {
+	max-width: 50px;
+	background-color:#F0F8FF;
+}
+
+div.mx-auto {
+	margin-left: auto;
+margin-right: auto;
+}
+
+footer.page-footer {
+	border-style: double;
+	background-color: #201b1b;
+}
+
+div.footer-copyright {
+	color:#c5c6c7;
+	font-family: 'Montserrat', sans-serif;
+}
+
+p.pheader {
+	text-align: center;
+	font-family: 'Montserrat',
+	sans-serif;
+	font-size: 200%;
+}
+
+div.position-relative {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 40%;
+}
+
+div.card {
+	max-width: 540px;
+}
+
+div.card-body {
+	text-align: center;
 }

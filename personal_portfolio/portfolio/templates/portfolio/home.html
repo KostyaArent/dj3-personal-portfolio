@@ -2,17 +2,14 @@
 {% load static %}
 
 {% block content %}
-<p style="text-align: center; font-family: 'Montserrat', sans-serif; font-size: 100%; font-size: 200%;">СОВСЕМ ЧУТЬ-ЧУТЬ ОБО МНЕ</p>
+<p class="pheader">СОВСЕМ ЧУТЬ-ЧУТЬ ОБО МНЕ</p>
 <hr />
 <br>
-<div class="position-relative" style="display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 40%; ">
+<div class="position-relative">
 
-<div class="card mb-0" style="max-width: 540px;">
+<div class="card mb-0">
   <img src="{% static 'portfolio/HC-5joB9JTs.jpg' %}" class="card-img-top" alt="...">
-  <div class="card-body" style="text-align: center;">
+  <div class="card-body">
   <h5 class="card-title">Имя: Константин</h5>
   <p class="card-text">Языки программирования:<br>{{ languages_str }}<br></p>
   <p class="card-text">Случайный факт:<br>{{fact}}</p>
@@ -25,10 +22,8 @@
 <br>
 <br>
 <br>
-<div class="position-relative" style="display: block;
-  margin-left: auto;
-  margin-right: auto;">
-<p style="text-align: center; font-family: 'Montserrat', sans-serif; font-size: 100%; font-size: 200%;">ПОРТФОЛИО</p>
+<div class="position-relative">
+<p class="pheader">ПОРТФОЛИО</p>
 <hr />
 </div>
 <br>
@@ -40,7 +35,7 @@
         <h2>{{ project.title }}</h2>
         <a href="{% if project.url %} {{ project.url }} {% endif %}"target="_blank">
 
-          <img src="{{ project.image.url }}" class="figure-img img-fluid rounded" style="object-fit:contain;
+          <img class="projectimg" src="{{ project.image.url }}" class="figure-img img-fluid rounded" style="object-fit:contain;
             width:320px;
             height:320px;
             border: solid 1px #CCC" alt="...">
